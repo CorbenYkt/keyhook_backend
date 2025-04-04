@@ -1,0 +1,157 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionview (7.1.3.2)
+      activesupport (= 7.1.3.2)
+      builder (~> 3.1)
+      erubi (~> 1.11)
+      rails-dom-testing (~> 2.2)
+      rails-html-sanitizer (~> 1.6)
+    activemodel (7.1.3.2)
+      activesupport (= 7.1.3.2)
+    activerecord (7.1.3.2)
+      activemodel (= 7.1.3.2)
+      activesupport (= 7.1.3.2)
+      timeout (>= 0.4.0)
+    activesupport (7.1.3.2)
+      base64
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      mutex_m
+      tzinfo (~> 2.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
+    builder (3.2.4)
+    concurrent-ruby (1.2.3)
+    connection_pool (2.4.1)
+    crass (1.0.6)
+    drb (2.2.1)
+    dry-core (1.0.1)
+      concurrent-ruby (~> 1.0)
+      zeitwerk (~> 2.6)
+    dry-inflector (1.0.0)
+    dry-logic (1.5.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.0, < 2)
+      zeitwerk (~> 2.6)
+    dry-types (1.7.2)
+      bigdecimal (~> 3.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.0)
+      dry-inflector (~> 1.0)
+      dry-logic (~> 1.4)
+      zeitwerk (~> 2.6)
+    erubi (1.12.0)
+    faker (3.3.1)
+      i18n (>= 1.8.11, < 2)
+    graphiti (1.7.1)
+      activesupport (>= 5.2)
+      concurrent-ruby (~> 1.0)
+      dry-types (>= 0.15.0, < 2.0)
+      graphiti_errors (~> 1.1.0)
+      jsonapi-renderer (~> 0.2, >= 0.2.2)
+      jsonapi-serializable (~> 0.3.0)
+    graphiti_errors (1.1.2)
+      jsonapi-serializable (~> 0.1)
+    i18n (1.14.5)
+      concurrent-ruby (~> 1.0)
+    jsonapi-renderer (0.2.2)
+    jsonapi-serializable (0.3.1)
+      jsonapi-renderer (~> 0.2.0)
+    kaminari (1.2.2)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.2)
+      kaminari-activerecord (= 1.2.2)
+      kaminari-core (= 1.2.2)
+    kaminari-actionview (1.2.2)
+      actionview
+      kaminari-core (= 1.2.2)
+    kaminari-activerecord (1.2.2)
+      activerecord
+      kaminari-core (= 1.2.2)
+    kaminari-core (1.2.2)
+    loofah (2.22.0)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.12.0)
+    minitest (5.22.3)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
+    mutex_m (0.2.0)
+    nokogiri (1.16.5-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.5-arm-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.5-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.5-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.5-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.5-x86_64-linux)
+      racc (~> 1.4)
+    racc (1.7.3)
+    rack (3.0.11)
+    rack-cors (2.0.2)
+      rack (>= 2.0.0)
+    rack-protection (4.0.0)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
+    rails-dom-testing (2.2.0)
+      activesupport (>= 5.0.0)
+      minitest
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.6.0)
+      loofah (~> 2.21)
+      nokogiri (~> 1.14)
+    ruby2_keywords (0.0.5)
+    sinatra (4.0.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.0.0)
+      rack-session (>= 2.0.0, < 3)
+      tilt (~> 2.0)
+    sqlite3 (1.4.4)
+    tilt (2.3.0)
+    timeout (0.4.1)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    webrick (1.8.1)
+    zeitwerk (2.6.13)
+
+PLATFORMS
+  aarch64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux
+  arm-linux-gnu
+  arm-linux-musl
+  arm64-darwin
+  x86-linux
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
+  x86_64-linux
+  x86_64-linux-gnu
+  x86_64-linux-musl
+
+DEPENDENCIES
+  activerecord
+  faker
+  graphiti
+  kaminari
+  rack-cors
+  rackup
+  sinatra
+  sqlite3 (~> 1.4.2)
+
+BUNDLED WITH
+   2.5.10
