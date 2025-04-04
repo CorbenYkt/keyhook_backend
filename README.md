@@ -10,4 +10,4 @@ $ bundle install
 $ bundle exec rackup -p 4567
 ```
 
-Visit `http://localhost:4567/api/v1/employees`
+Launched on http://ec2-3-26-7-103.ap-southeast-2.compute.amazonaws.com:4567/api/v1
