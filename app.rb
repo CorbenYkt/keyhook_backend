@@ -40,13 +40,13 @@ class EmployeeResource < ApplicationResource
 
   # filters
   filter :first_name, :string do
-    eq { |scope, value| scope.where('lower(first_name) LIKE ?', "%#{value.downcase}%") }
+    eq { |scope, value| scope.where('lower(first_name) LIKE ?', "%#{value.first.downcase}%") }
   end
-
+  
   filter :last_name, :string do
-    eq { |scope, value| scope.where('lower(last_name) LIKE ?', "%#{value.downcase}%") }
+    eq { |scope, value| scope.where('lower(last_name) LIKE ?', "%#{value.first.downcase}%") }
   end
-
+  
   filter :position, :string
   filter :age, :integer
 
